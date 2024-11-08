@@ -23,122 +23,25 @@
     <script src="./js/main.js"></script>
 </head>
 <body>
-    <header class="header" data-header>
-
-        <div class="overlay" data-overlay></div>
-    
-        <div class="header-top">
-          <div class="container">
-    
-            <a href="tel:+01123456790" class="helpline-box">
-    
-              <div class="icon-box">
-                <ion-icon name="call-outline"></ion-icon>
-              </div>
-    
-              <div class="wrapper">
-                <p class="helpline-title">For Further Inquires :</p>
-    
-                <p class="helpline-number">+01 (123) 4567 90</p>
-              </div>
-    
-            </a>
-    
-            <a href="#" class="logo">
-              <img src="./images/logo.svg" alt="Tourly logo">
-            </a>
-    
-            <div class="header-btn-group">
-    
-              <button class="search-btn" aria-label="Search">
-                <ion-icon name="search"></ion-icon>
-              </button>
-    
-              <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
-                <ion-icon name="menu-outline"></ion-icon>
-              </button>
-    
-            </div>
-    
-          </div>
+  <nav class="navbar">
+    <div class="navbar-container container">
+        <input type="checkbox" name="" id="">
+        <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
         </div>
-    
-        <div class="header-bottom">
-          <div class="container">
-    
-            <ul class="social-list">
-    
-              <li>
-                <a href="#" class="social-link">
-                  <ion-icon name="logo-facebook"></ion-icon>
-                </a>
-              </li>
-    
-              <li>
-                <a href="#" class="social-link">
-                  <ion-icon name="logo-twitter"></ion-icon>
-                </a>
-              </li>
-    
-              <li>
-                <a href="#" class="social-link">
-                  <ion-icon name="logo-youtube"></ion-icon>
-                </a>
-              </li>
-    
-            </ul>
-    
-            <nav class="navbar" data-navbar>
-    
-              <div class="navbar-top">
-    
-                <a href="#" class="logo">
-                  <img src="./images/logo-blue.svg" alt="Tourly logo">
-                </a>
-    
-                <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
-                  <ion-icon name="close-outline"></ion-icon>
-                </button>
-    
-              </div>
-    
-              <ul class="navbar-list">
-    
-                <li>
-                  <a href="#home" class="navbar-link" data-nav-link>home</a>
-                </li>
-    
-                <li>
-                  <a href="#" class="navbar-link" data-nav-link>about us</a>
-                </li>
-    
-                <li>
-                  <a href="#destination" class="navbar-link" data-nav-link>destination</a>
-                </li>
-    
-                <li>
-                  <a href="#package" class="navbar-link" data-nav-link>packages</a>
-                </li>
-    
-                <li>
-                  <a href="#gallery" class="navbar-link" data-nav-link>gallery</a>
-                </li>
-    
-                <li>
-                  <a href="#contact" class="navbar-link" data-nav-link>contact us</a>
-                </li>
-    
-              </ul>
-    
-            </nav>
-    
-            <button class="btn btn-primary">Book Now</button>
-    
-          </div>
-        </div>
-    
-      </header>
-    
+        <ul class="menu-items">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#food">Category</a></li>
+            <li><a href="#food-menu">Menu</a></li>
+            <li><a href="#testimonials">Testimonial</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <h1 class="logo">RS</h1>
+    </div>
+</nav>
  <!-- /   <header class="header">
         <a href="#" class="logo"><img src="./images/logo-1.jpeg" alt=""></a>
         <div class="fas fa-bars"></div>
@@ -163,6 +66,35 @@
     <div class="wave wave2"></div>
     <div class="wave wave3"></div>
   </section>
+
+  <div class="row1">
+    <div class="imgWrapper">
+      <img src="images/image23.jpg" alt="Furniture Image">
+    </div>
+    <div class="contentWrapper">
+      <div class="content">
+        <span class="textWrapper">
+          <span></span>New Collection</span>
+          <h2>Furniture Indoor Product</h2>
+          <p>
+            Navbar Layout:
+            .navbar has been styled as a fixed element at the top with a white background, shadow, and flexible layout to ensure it stretches across the screen.
+            Navbar Links:
+            .navbar-link has been reset and styled with padding, font size, and hover effects.
+            Mobile View:
+            The navbar turns into a hamburger menu on smaller screens (max-width: 768px). The links are hidden by default and shown when the .open class is added.
+            JavaScript:
+            Clicking the hamburger menu button opens the mobile navbar, and clicking the close button or overlay closes it.
+            Troubleshooting Navbar Not Appearing: Ensure the CSS is being applied by checking if the link tag for your CSS file is correct. Also, check the console for any errors.
+            Conflict with Other Styles: If you have other CSS files or global styles, some may be affecting the navbar. You can inspect the navbar with browser developer tools to see which styles are being applied and adjust accordingly.
+          </p>
+          <a href="#">Decorate Your House</a>
+        </span>
+      </div>
+    </div>
+  </div>
+  >
+
 
   <section id="about" class="about">
     <h1 class="heading">about us</h1>
@@ -234,6 +166,16 @@
     </div>
 </section>
 
+
+<section>
+  <div class="container">
+    <div class="card-wrapper">
+      <div class="card">
+        <img src="" alt="">
+      </div>
+    </div>
+  </div>
+</section>
 <div class="pt-5 pb-5">
     <div class="container">
       <div class="row">
