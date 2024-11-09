@@ -17,6 +17,235 @@ body {
   font-family: "Poppins", sans-serif;
 
 }
+/*//////..what we offer...///*/
+.wrapper{
+    max-width: 1300px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.wrapper .table{
+    background: #fff;
+    width: calc(33% - 20px);
+    padding: 30px 30px;
+    position: relative;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 1020px){
+    .wrapper .table{
+        width: calc(50% - 20px);
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 698px){
+    .wrapper .table{
+        width: 100%;
+    }
+}
+
+.table .price-section{
+   display: flex;
+   justify-content: center;
+}
+
+.price-section .price-area{
+    height: 160px;
+    width: 160px;
+    background: #ffd861;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+.price-section .price-area .inner-area{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    color: #fff;
+    line-height: 150px;
+    text-align: center;
+    position: relative;
+}
+
+.price-area .inner-area .text{
+    font-size: 25px;
+    font-weight: 400;
+    position: absolute;
+    top: -10px;
+    left: 10px;
+}
+
+.price-area .inner-area .price{
+    font-size: 55px;
+    font-weight: 500;
+}
+
+.table .package-name{
+    width: 100%;
+    height: 2px;
+    background: #ffecb3;
+    margin: 35px 0;
+    position: relative;
+}
+
+.table .package-name::before{
+    position: absolute;
+    content: "Service Based Websites";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    font-size: 16px;
+    padding: 0 10px;
+    font-weight: bolder;
+}
+
+.table .features li{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.features li .list-name{
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.features li .icon{
+    font-size: 15px;
+}
+
+.features li .icon.check{
+    color: #2db94d;
+}
+
+.features li .icon.cross{
+    color: #cd3241;
+}
+
+.table .btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.table .btn button{
+    width: 80%;
+    height: 50px;
+    font-weight: 700;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.basic .price-area,
+.basic .inner-area{
+    background: #ffd861;
+}
+
+.basic .btn button{
+    background: #fff;
+    color: #ffd861;
+    border: 2px solid #ffd861;
+}
+
+.basic .btn button:hover{
+    border-radius: 6px;
+    background: #ffd861;
+    color: #fff;
+}
+
+.Premium .price-area,
+.Premium .inner-area{
+    background: #a26bfa;
+}
+
+.Premium .btn button{
+    background: #fff;
+    color: #a26bfa;
+    border: 2px solid #a26bfa;
+}
+
+.Premium .btn button:hover{
+    border-radius: 6px;
+    background: #a26bfa;
+    color: #fff;
+}
+
+.Ultimate .price-area,
+.Ultimate .inner-area{
+    background: #43ef8b;
+}
+
+.Ultimate .btn button{
+    background: #fff;
+    color: #43ef8b;
+    border: 2px solid #43ef8b;
+}
+
+.Ultimate .btn button:hover{
+    border-radius: 6px;
+    background: #43ef8b;
+    color: #fff;
+}
+
+.basic .package-name{
+    background: #ffecb3;
+}
+
+.Premium .package-name{
+    background: #a26bfa;
+}
+
+.Ultimate .package-name{
+    background: #43ef8b;
+}
+
+.basic .package-name::before{
+    content: "Service Based Websites";
+    white-space: nowrap;
+}
+
+.Premium .package-name::before{
+    content: "Ecommerce Based Websites";
+    white-space: nowrap;
+}
+
+.Ultimate .package-name::before{
+    content: "Multi-Country SEO Focused";
+    white-space: nowrap;
+}
+
+.basic ::selection,
+.basic .price-area,
+.basic .inner-area{
+    background: #ffd861;
+}
+
+.Premium ::selection,
+.Premium .price-area,
+.Premium .inner-area{
+    background: #a26bfa;
+}
+
+.Ultimate ::selection,
+.Ultimate .price-area,
+.Ultimate .inner-area{
+    background: #43ef8b;
+}
+
+
 
 /* ///////////..utility classes../////////// */
 
@@ -101,7 +330,43 @@ body {
     letter-spacing: 1px;
     user-select: none;
 }
-
+@media(max-width: 991px){
+    .row1 {
+        grid-template-columns:  1fr;
+        grid-gap: 50px;
+    }
+    
+}
+.row1 .contentWrapper {
+    padding-left: 0;
+}
+@media(max-width: 768) {
+    widh: 90%;
+}
+.row1 .contentWrapper h2{
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+.row1 ,.contentWrapper p{
+    font-size: 16px;
+    line-height: 24px;
+}
+@media (max-width:575px){
+    .row1 .contentWrapper span.textWrapper{
+        font-size: 18px;
+    }
+    .row1 .contentWrapper h2{
+        font-size: 25px;
+    }
+    .row .contentWrapper p{
+        font-size: 15px;
+        line-height: 22px;
+    }
+    .row .contentWrapper a{
+       font-size: 15px; 
+       padding: 10px 20px;
+    }
+}
 
 .textWrapper {
     display: block;
@@ -159,7 +424,27 @@ body {
 .navbar .hamburger-lines {
   display: none;
 }
-
+.top-nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Creates two equal-width columns */
+    gap: 30px; /* Optional: Adds space between the grid items */
+    width: 72px;
+}
+.top-nav-item{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px; 
+}
+.staff{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 20px;
+}
+.staff-icons{
+    display: grid;
+    grid-template-columns: 1fr 1fr;   
+    gap: 10px;
+}
 
 .navbar {
   box-shadow: 0px 5px 10px 0px #aaa;
@@ -168,14 +453,14 @@ body {
   background: #fff;
   color: #000;
   opacity: 0.85;
-  height: 50px;
+  height: 70px;
   z-index: 12;
 }
 
 .navbar-container {
   display: flex;
   justify-content: space-between;
-  height: 64px;
+  height: 18px;
   align-items: center;
 }
 
@@ -260,6 +545,16 @@ body{
     bottom: -.5rem;
     right: -2rem;
     transform: rotate(180deg);
+}
+.faq-all {
+    display: grid;
+    grid-template-columns: 3fr 2fr; /* Creates two equal-width columns */
+    gap: 20px; /* Optional: Adds space between the grid items */
+}
+.faq-image{
+    display: flex;
+    height: 600px;
+    width: 600px;
 }
 
 .row .btn{
@@ -1232,7 +1527,7 @@ body{
         }
         
         .faq .row .accordion-container{
-            width: 50%;
+            width: 80%;
             text-align: left;
         }
 
@@ -1240,7 +1535,188 @@ body{
             margin-left: 1rem;
             margin-right: 2rem;
         }
-        
+        .chatbot-toggler {
+            position: fixed;
+            bottom: 30px;
+            right: 35px;
+            outline: none;
+            border: none;
+            height: 50px;
+            width: 50px;
+            display: flex;
+            cursor: pointer;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: #724ae8;
+            transition: all 0.2s ease;
+          }
+          body.show-chatbot .chatbot-toggler {
+            transform: rotate(90deg);
+          }
+          .chatbot-toggler span {
+            color: #fff;
+            position: absolute;
+          }
+          .chatbot-toggler span:last-child,
+          body.show-chatbot .chatbot-toggler span:first-child  {
+            opacity: 0;
+          }
+          body.show-chatbot .chatbot-toggler span:last-child {
+            opacity: 1;
+          }
+          .chatbot {
+            position: fixed;
+            right: 35px;
+            bottom: 90px;
+            width: 420px;
+            background: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            opacity: 0;
+            pointer-events: none;
+            transform: scale(0.5);
+            transform-origin: bottom right;
+            box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),
+                        0 32px 64px -48px rgba(0,0,0,0.5);
+            transition: all 0.1s ease;
+          }
+          body.show-chatbot .chatbot {
+            opacity: 1;
+            pointer-events: auto;
+            transform: scale(1);
+          }
+          .chatbot header {
+            padding: 16px 0;
+            position: relative;
+            text-align: center;
+            color: #fff;
+            background: #724ae8;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+          }
+          .chatbot header span {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            display: none;
+            cursor: pointer;
+            transform: translateY(-50%);
+          }
+          header h2 {
+            font-size: 1.4rem;
+          }
+          .chatbot .chatbox {
+            overflow-y: auto;
+            height: 510px;
+            padding: 30px 20px 100px;
+          }
+          .chatbot :where(.chatbox, textarea)::-webkit-scrollbar {
+            width: 6px;
+          }
+          .chatbot :where(.chatbox, textarea)::-webkit-scrollbar-track {
+            background: #fff;
+            border-radius: 25px;
+          }
+          .chatbot :where(.chatbox, textarea)::-webkit-scrollbar-thumb {
+            background: #ccc;
+            border-radius: 25px;
+          }
+          .chatbox .chat {
+            display: flex;
+            list-style: none;
+          }
+          .chatbox .outgoing {
+            margin: 20px 0;
+            justify-content: flex-end;
+          }
+          .chatbox .incoming span {
+            width: 32px;
+            height: 32px;
+            color: #fff;
+            cursor: default;
+            text-align: center;
+            line-height: 32px;
+            align-self: flex-end;
+            background: #724ae8;
+            border-radius: 4px;
+            margin: 0 10px 7px 0;
+          }
+          .chatbox .chat p {
+            white-space: pre-wrap;
+            padding: 12px 16px;
+            border-radius: 10px 10px 0 10px;
+            max-width: 75%;
+            color: #fff;
+            font-size: 0.95rem;
+            background: #724ae8;
+          }
+          .chatbox .incoming p {
+            border-radius: 10px 10px 10px 0;
+          }
+          .chatbox .chat p.error {
+            color: #721c24;
+            background: #f8d7da;
+          }
+          .chatbox .incoming p {
+            color: #000;
+            background: #f2f2f2;
+          }
+          .chatbot .chat-input {
+            display: flex;
+            gap: 5px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background: #fff;
+            padding: 3px 20px;
+            border-top: 1px solid #ddd;
+          }
+          .chat-input textarea {
+            height: 55px;
+            width: 100%;
+            border: none;
+            outline: none;
+            resize: none;
+            max-height: 180px;
+            padding: 15px 15px 15px 0;
+            font-size: 0.95rem;
+          }
+          .chat-input span {
+            align-self: flex-end;
+            color: #724ae8;
+            cursor: pointer;
+            height: 55px;
+            display: flex;
+            align-items: center;
+            visibility: hidden;
+            font-size: 1.35rem;
+          }
+          .chat-input textarea:valid ~ span {
+            visibility: visible;
+          }
+          @media (max-width: 490px) {
+            .chatbot-toggler {
+              right: 20px;
+              bottom: 20px;
+            }
+            .chatbot {
+              right: 0;
+              bottom: 0;
+              height: 100%;
+              border-radius: 0;
+              width: 100%;
+            }
+            .chatbot .chatbox {
+              height: 90%;
+              padding: 25px 15px 100px;
+            }
+            .chatbot .chat-input {
+              padding: 5px 15px;
+            }
+            .chatbot header span {
+              display: block;
+            }
+          }
         .faq .row .accordion-container .accordion .accordion-header{
             background-color: #00bfff;
             margin: 1rem 0;
