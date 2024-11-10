@@ -18,6 +18,7 @@ body {
 
 }
 /*//////..what we offer...///*/
+
 .wrapper{
     max-width: 1300px;
     width: 100%;
@@ -341,7 +342,7 @@ body {
     padding-left: 0;
 }
 @media(max-width: 768) {
-    widh: 90%;
+    width: 90%;
 }
 .row1 .contentWrapper h2{
     font-size: 30px;
@@ -428,39 +429,43 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr; /* Creates two equal-width columns */
     gap: 30px; /* Optional: Adds space between the grid items */
-    width: 72px;
+    width: 85px;
 }
 .top-nav-item{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px; 
+    font-size: 1.5rem;
 }
 .staff{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; 
     gap: 20px;
+    font-size: 1.5rem;
 }
 .staff-icons{
     display: grid;
-    grid-template-columns: 1fr 1fr;   
+    grid-template-columns: 1fr 1fr 1fr 1fr;   
     gap: 10px;
+    height: 18px;
+    font-size: 1.5rem;
 }
 
 .navbar {
   box-shadow: 0px 5px 10px 0px #aaa;
   position: fixed;
   width: 100%;
-  background: #fff;
+  background: linear-gradient(to right, rgb(224, 10, 78), rgb(9, 16, 228));
   color: #000;
   opacity: 0.85;
-  height: 70px;
+  height: 100px;
   z-index: 12;
 }
 
 .navbar-container {
   display: flex;
   justify-content: space-between;
-  height: 18px;
+  height: 24px;
   align-items: center;
 }
 
@@ -473,12 +478,13 @@ body {
   list-style: none;
   margin-left: 1.5rem;
   margin-bottom: 0.5rem;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+
 }
 
 .menu-items a {
   text-decoration: none;
-  color: #444;
+  color: black;
   font-weight: 500;
   transition: color 0.3s ease-in-out;
 }
