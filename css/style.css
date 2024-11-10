@@ -19,6 +19,202 @@ body {
 }
 /*//////..what we offer...///*/
 
+/* Submenu Styling */
+.navbar ul .submenu {
+    position: absolute;
+    width: 200px;
+    background-color: rgb(42, 42, 218); /* Light blue background */
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.2);
+    margin-top: 0;
+    opacity: 0;
+    z-index: -1;
+    border-radius: 8px;
+    padding: 10px 0;
+    transition: opacity 0.5s ease, z-index 0.5s ease;
+}
+
+/* Make submenu visible on hover */
+.navbar ul li:hover .submenu {
+    opacity: 1;
+    z-index: 99;
+    margin-top: 0;
+}
+
+/* Additional Submenu Styling */
+.navbar ul .submenu li {
+    list-style: none;
+}
+
+.navbar ul .submenu li a {
+    padding: 10px 20px;
+    display: block;
+    color: #333;
+    text-decoration: none;
+}
+
+.navbar ul .submenu li a:hover {
+    background-color: #3e1ee2;
+}
+/* Media query for screens up to 768px wide */
+/* Media query for screens up to 768px wide */
+@media (max-width: 768px) {
+    /* Adjust navbar container to take full width */
+    .navbar-container {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 120px; /* Adds space to prevent overlapping with fixed navbar */
+    }
+
+    /* Hide desktop-style menu items and show hamburger menu */
+    .menu-items {
+        display: none;
+    }
+
+    /* Show menu items when checkbox (hamburger) is checked */
+    input[type="checkbox"]:checked ~ .menu-items {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 100px; /* Adjust position to prevent overlap with navbar */
+        background-color: #fff;
+        padding: 20px 0;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        z-index: 99;
+    }
+
+    /* Style for the hamburger lines */
+    .hamburger-lines {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 25px;
+        height: 25px;
+    }
+
+    .line {
+        background-color: #000;
+        height: 2px;
+        width: 100%;
+        transition: transform 0.3s ease;
+    }
+
+    /* Submenu styling for mobile view */
+    .submenu {
+        display: none;
+        position: static;
+        background-color: rgb(42, 42, 218);
+        border-radius: 8px;
+        padding: 10px;
+        margin-top: 10px;
+        z-index: 99;
+    }
+
+    /* Show submenu when parent item is clicked */
+    .menu-items li:hover .submenu,
+    .menu-items li:focus-within .submenu {
+        display: block;
+    }
+
+    /* Submenu link styling */
+    .submenu li a {
+        padding: 10px;
+        color: #333;
+        text-decoration: none;
+    }
+
+    .submenu li a:hover {
+        background-color: #3e1ee2;
+    }
+
+    /* Prevent overlap by adding padding to main content */
+    main {
+        padding-top: 200px; /* Adjust as needed to prevent overlap with navbar */
+    }
+}
+/* Media query for screens up to 768px wide */
+@media (max-width: 768px) {
+    /* Stack navbar vertically and adjust padding */
+    .navbar-container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 60px; /* Adds space to prevent overlap with the fixed navbar */
+        width: 100%;
+    }
+
+    /* Hide menu items until the hamburger is clicked */
+    .menu-items {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px; /* Position menu below the navbar */
+        background-color: #fff;
+        padding: 20px 0;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        z-index: 99;
+    }
+
+    /* Show menu items when hamburger checkbox is checked */
+    input[type="checkbox"]:checked ~ .menu-items {
+        display: flex;
+    }
+
+    /* Style hamburger icon */
+    .hamburger-lines {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 25px;
+        height: 25px;
+        margin-left: 10px;
+    }
+
+    .line {
+        background-color: #000;
+        height: 2px;
+        width: 100%;
+        transition: transform 0.3s ease;
+    }
+
+    /* Submenu styling for mobile view */
+    .submenu {
+        display: none;
+        position: static;
+        background-color: rgb(42, 42, 218);
+        border-radius: 8px;
+        margin-top: 5px;
+        padding: 10px 0;
+        width: 100%;
+    }
+
+    /* Show submenu on hover or focus within the parent item */
+    .menu-items li:focus-within .submenu,
+    .menu-items li:hover .submenu {
+        display: block;
+    }
+
+    /* Submenu link styling */
+    .submenu li a {
+        padding: 10px;
+        color: #333;
+        text-decoration: none;
+    }
+
+    .submenu li a:hover {
+        background-color: #3e1ee2;
+    }
+
+    /* Prevent overlap with main content */
+    main {
+        padding-top: 160px; /* Adjust to prevent overlap */
+    }
+}
+
+/*end*/
+
 .wrapper{
     max-width: 1300px;
     width: 100%;
@@ -1724,7 +1920,7 @@ body{
             }
           }
         .faq .row .accordion-container .accordion .accordion-header{
-            background-color: #00bfff;
+            background: linear-gradient(to right, rgb(227, 49, 105), rgb(46, 50, 196));
             margin: 1rem 0;
             box-shadow: .1rem .1rem .3rem rgba(0,0,0,.3);
             cursor: pointer;
@@ -1746,7 +1942,7 @@ body{
         
         .faq .row .accordion-container .accordion .accordion-header h3{
             display: inline;
-            color: #333;
+            color:white;
             font-weight: 400;
             padding-left: .5rem;
             font-size: 1.5rem;
