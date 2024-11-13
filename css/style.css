@@ -230,7 +230,7 @@ body {
     width: calc(33% - 20px);
     padding: 30px 30px;
     position: relative;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
 }
 
 @media (max-width: 1020px){
@@ -254,7 +254,7 @@ body {
 .price-section .price-area{
     height: 160px;
     width: 160px;
-    background: #ffd861;
+    background: #C33279;
     border-radius: 50%;
     padding: 2px;
 }
@@ -348,47 +348,47 @@ body {
 
 .basic .price-area,
 .basic .inner-area{
-    background: #ffd861;
+    background: #ff61ca;
 }
 
 .basic .btn button{
-    background: #fff;
-    color: #ffd861;
-    border: 2px solid #ffd861;
+    background: #C43279;
+    color: #fff;
+    border: 2px solid #2F32C4;
 }
 
 .basic .btn button:hover{
     border-radius: 6px;
-    background: #ffd861;
+    background: #C43279;
     color: #fff;
 }
 
 .Premium .price-area,
 .Premium .inner-area{
-    background: #a26bfa;
+    background: #C33279;
 }
 
 .Premium .btn button{
-    background: #fff;
-    color: #a26bfa;
-    border: 2px solid #a26bfa;
+    background: #C43279;
+    color: white;
+    border: 2px solid #2F32C4;
 }
 
 .Premium .btn button:hover{
     border-radius: 6px;
-    background: #a26bfa;
+    background: #C43279;
     color: #fff;
 }
 
 .Ultimate .price-area,
 .Ultimate .inner-area{
-    background: #43ef8b;
+    background: #C33279;
 }
 
 .Ultimate .btn button{
-    background: #fff;
-    color: #43ef8b;
-    border: 2px solid #43ef8b;
+    background: #C43279;
+    color: #fff;
+    border: 2px solid #2F32C4;
 }
 
 .Ultimate .btn button:hover{
@@ -427,19 +427,19 @@ body {
 .basic ::selection,
 .basic .price-area,
 .basic .inner-area{
-    background: #ffd861;
+    background: #C33279;
 }
 
 .Premium ::selection,
 .Premium .price-area,
 .Premium .inner-area{
-    background: #a26bfa;
+    background: #C33279;
 }
 
 .Ultimate ::selection,
 .Ultimate .price-area,
 .Ultimate .inner-area{
-    background: #43ef8b;
+    background: #C33279;
 }
 
 
@@ -499,7 +499,7 @@ body {
 }
 .row1 .contentWrapper span.textWrapper span{
     display: inline-block;
-    background: #383f47;
+    background: white;
     width: 90px;
     height: 5px;
 }
@@ -1367,7 +1367,7 @@ body{
     margin-top: 4rem;
     padding-top: 0 1rem;
     font-size: 2rem;
-    color: #333;
+    color: white;
     align-items: center;
     justify-content: center;
     padding: 1rem;
@@ -1860,7 +1860,7 @@ body{
             background: #f8d7da;
           }
           .chatbox .incoming p {
-            color: #000;
+            color: white;
             background: #f2f2f2;
           }
           .chatbot .chat-input {
@@ -1950,7 +1950,7 @@ body{
         
         .faq .row .accordion-container .accordion .accordion-body{
             padding: 1rem;
-            color: #444;
+            color: white;
             box-shadow: .1rem .1rem .3rem rgba(0,0,0,.3);
             background-color: #fff;
             font-size: 1.3rem;
