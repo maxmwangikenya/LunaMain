@@ -359,7 +359,7 @@ body {
 
 .basic .btn button:hover{
     border-radius: 6px;
-    background: #C43279;
+    background: #2F32C4;
     color: #fff;
 }
 
@@ -376,7 +376,7 @@ body {
 
 .Premium .btn button:hover{
     border-radius: 6px;
-    background: #C43279;
+    background: #2F32C4;
     color: #fff;
 }
 
@@ -393,7 +393,7 @@ body {
 
 .Ultimate .btn button:hover{
     border-radius: 6px;
-    background: #43ef8b;
+    background: #2F32C4;
     color: #fff;
 }
 
@@ -521,7 +521,7 @@ body {
     display: inline-block;
     text-decoration: none;
     text-transform: uppercase;
-    background: #010d1a;
+    background: white;
     color: white;
     padding: 15px 40px;
     letter-spacing: 1px;
@@ -1919,6 +1919,15 @@ body{
               display: block;
             }
           }
+          .faq-all {
+            background-color: white; /* Ensures white background for the entire section */
+            padding: 2rem; /* Optional: adds padding to the entire FAQ section */
+            margin: 0; /* Removes any default margin */
+            border: none; /* Ensures no border is added */
+            outline: none; /* Removes any default outline */
+            box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1); /* Optional shadow */
+        }
+        
         .faq .row .accordion-container .accordion .accordion-header{
             background: linear-gradient(to right, rgb(227, 49, 105), rgb(46, 50, 196));
             margin: 1rem 0;
@@ -1948,17 +1957,47 @@ body{
             font-size: 1.5rem;
         }
         
-        .faq .row .accordion-container .accordion .accordion-body{
-            padding: 1rem;
-            color: white;
-            box-shadow: .1rem .1rem .3rem rgba(0,0,0,.3);
+        .faq .row .accordion-container .accordion-body {
+            padding: 1.5rem;
+            background-color: #f9f9f9;
+            box-shadow: .1rem .8rem .4rem rgba(0,0,0,0.3);
             background-color: #fff;
             font-size: 1.3rem;
             display: none;
             margin-left: 1rem;
             margin-right: 2rem;
+            display: block;
+            font-weight: 500;
+        }
+        .accordion-body p {
+            margin-bottom: 1rem;
         }
         
+        .accordion-body ol {
+            margin-left: 1.5rem;
+        }
+        
+        .accordion-body ol li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .accordion-body strong {
+            color: #d9534f; /* Highlight important text */
+        } p {
+            margin-bottom: 1rem;
+        }
+        
+        .instruction ol {
+            margin-left: 1.5rem;
+        }
+        
+        .instruction ol li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .instruction strong {
+            color: #d9534f; /* Highlight important text */
+        }
 @media (max-width: 1200px){
     .faq{
         min-height: 70vh;
