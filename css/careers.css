@@ -17,8 +17,123 @@ html{
 body{
     overflow-x: hidden;
 }
-
-.header{
+/* Submenu Styling */
+/* General Navbar Styling */
+.navbar {
+    box-shadow: 0px 5px 10px 0px #aaa;
+    position: fixed;
+    width: 100%;
+    background: linear-gradient(to right, rgb(224, 10, 78), rgb(9, 16, 228));
+    color: white;
+    opacity: 0.85;
+    height: 100px;
+    z-index: 12;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Logo Styling */
+  .logo {
+    font-size: 2.3rem;
+    margin-right: auto;
+    order: 1;
+  }
+  
+  /* Top Navigation Styling */
+  .top-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  
+  .top-nav-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+  }
+  
+  /* Staff Section Styling */
+  .staff {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .staff-icons {
+    display: flex;
+    gap: 10px;
+    font-size: 1.5rem;
+  }
+  
+  /* Menu Items Styling */
+  .menu-items {
+    display: flex;
+    gap: 1.5rem;
+    order: 2;
+  }
+  
+  .menu-items li {
+    list-style: none;
+    font-size: 1.5rem;
+  }
+  
+  .menu-items a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .menu-items a:hover {
+    color: #117964;
+  }
+  
+  /* Universal Styles */
+  * {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    transition: all 0.2s linear;
+    text-decoration: none;
+  }
+  
+  /* Submenu Styling */
+  .navbar ul li:hover .submenu {
+    opacity: 1;
+    z-index: 99;
+  }
+  
+  .navbar ul .submenu {
+    display: none;
+    position: absolute;
+    background-color: rgb(42, 42, 218);
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  .navbar ul .submenu li {
+    list-style: none;
+  }
+  
+  .navbar ul .submenu li a {
+    padding: 10px 20px;
+    display: block;
+    color: #333;
+  }
+  
+  .navbar ul .submenu li a:hover {
+    background-color: #3e1ee2;
+  }
+  
+/* .header{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -68,7 +183,7 @@ body{
     cursor: pointer;
     font-size: 3rem;
     display: none;
-}
+} */
 
 .home{
     min-height: 70vh;

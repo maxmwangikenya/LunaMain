@@ -454,9 +454,12 @@ body {
 /* Parent container */
 .row1 {
     display: grid;
+    width: 80%;
+    max-width: 1170px;
     grid-template-columns: repeat(2, 1fr); /* 2 equal columns on larger screens */
     grid-gap: 50px;
     max-width: 100%;
+    padding: 5rem 0;
 }
 
 
@@ -534,7 +537,7 @@ body {
 
 @media(max-width: 991px){
     .row1 {
-        grid-template-columns:  1fr;
+        grid-template-columns: repeat(1, 1fr);
         grid-gap: 50px;
     }
     
